@@ -1,0 +1,129 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  font: 14px/28px 'Open Sans', sans-serif;
+  background: #1D1F20;
+  box-sizing: border-box
+}
+/* Flip Menu */
+
+#flip-menu {
+  position: relative;
+  height: auto;
+  max-width: 100px;
+}
+
+#flip-menu img {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+}
+
+#flip-board {
+  width: 100%;
+  height: 100%;
+  background-color: #f54364;
+  border-left: 1px solid #DE3D57;
+  border-width: 8px;
+}
+
+.flip-tab {
+  transform-origin: left;
+  position: relative;
+  right: -100%;
+  width: 200px;
+  background-color: #f54364;
+  text-align: center;
+}
+
+.flip-tab a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 100px;
+  border-bottom: 1px solid #F75B78;
+  border-width: 3px;
+  padding-bottom: 8px;
+}
+
+#flip-board li {
+  transition: all .15s ease-in-out;
+}
+
+.flip-tab:hover {
+  background-color: #393939;
+  font-size: 16px;
+}
+
+#flip-board {
+  -webkit-perspective-origin: 100% 90%;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+}
+/* Rotate Menu */
+
+.rot-5 {
+  transform: rotatey(5deg);
+  -ms-transform: rotatey(5deg);
+  -webkit-transform: rotatey(5deg);
+  background-color: #f74166;
+}
+
+.rot-10 {
+  transform: rotatey(10deg);
+  -ms-transform: rotatey(10deg);
+  -webkit-transform: rotatey(10deg);
+  background-color: #de3d57;
+}
+
+.rot-15 {
+  transform: rotatey(15deg);
+  -ms-transform: rotatey(15deg);
+  -webkit-transform: rotatey(15deg);
+  background-color: #d43756;
+}
+
+.rot-20 {
+  transform: rotatey(20deg);
+  -ms-transform: rotatey(20deg);
+  -webkit-transform: rotatey(20deg);
+  background-color: #cc3756;
+}
+
+.t-shadow {
+  -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.b-shadow {
+  -webkit-box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px -5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.shadow {
+  -webkit-box-shadow: 7px 9px 21px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 7px 9px 21px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 7px 9px 21px 0px rgba(0, 0, 0, 0.44);
+}
+
+.cred {
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cred a {
+  text-decoration: none;
+  width: 400px;
+  color: #626262;
+}
+
+.cred a:hover {
+  color: #fff;
+}
